@@ -11,55 +11,157 @@
             padding: 0;
             box-sizing:border-box;
         }
+        .heading1 {
+            margin: 25px;
+        }
+        .heading2 {
+            margin: 25px;
+            color:aliceblue;
+        }
+        .heading3 {
+            margin-left: 24px;
+            color: purple;
+        }
         body {
+        background-color: rgb(133, 204, 226);
             width: 100vw;
             height: 100%;
-            /* overflow: hidden; */
             font-size: 12px;
             line-height: 1rem;
         }
-        header {
-            background-color: yellow;
-            color: rgb(rgb(86, 213, 154), green, blue);
-            height: 15vh;
+        .p1 {
+            line-height:normal;
+            margin: 25px;
         }
-        .wrapper {
-            padding: 2.5rem;
+        .p2 {
+            line-height:normal;
+            margin: 25px;
+            margin-bottom: -1200px;
+        }
+        .p3 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: blue;
+        }
+        .p4 {
+            color: red;
+            margin-left: 25px;
+            
+        }
+        .Div1 {
+            margin-bottom: -800px;
+            height:630px;
+            margin: 25px;
+            display: inline-block; 
+            border: 10px outset rgb(37, 16, 224);
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        .Div2 {
+            padding: 1rem;
             width: 100%;
+            height: 50px;
             display: flex;
             flex-direction: row;
-            background-color: green;
+            color: purple;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
         }
-        #menu-col {
+        .section2 {
+            margin-top: -1400px;
+            margin-bottom: -1100px;
+            margin: 25px;
+        }
+        .header {
+            background-color: yellow;
+            color: rgb(133, 204, 226);
+            height: 15vh;
+        }
+        .menu-col {
             margin: 25px;
             padding: 15px;
             width: 50%;
             background-color: aqua;
         }
-        #content {
-            width: 50%;
+        .content {
+            width: 100%;
         }
+        .img1 {
+            width: 500px;
+            height: auto;
+            object-fit: cover;
+        }
+      .button {
+            border: none;
+            height: 100px;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%
+        }
+        .button1 {
+            background-color: white;
+            color: #04AA6D;
+            border: 2px solid #04AA6D;
+            text-align: center;
+        }
+        .button1:hover {
+            background-color: #04AA6D;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        .button2 {
+            background-color: white;
+            color: #040aaa;
+            border: 2px solid #040aaa;
+            text-align: center;
+        }
+        .button2:hover {
+            background-color: #040aaa;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        
     </style>
 </head>
 <body>
-    <h1>hello world ! </h1>
-    welcome to my first ever html <i>page</i>...? if that is what you call it. 
-    <p>i like code <b>i guess</b></p>
+    <h1 class="heading1"> HI WORLD (THIS IS A HEADING)</h1>
+        <p class="p1"> welcome to my first ever html <i>page</i>...? <br>if that is what you call it.(this is a paragraph)</p>
+        <p class="p2">i like code <b>i guess</b>(this is another paragraph)</p>
     <section>
+        <div class="Div1">
+            <img class="img1" src="https://i.pinimg.com/originals/2b/07/f6/2b07f62987e987d4e53e84aa8b963b83.gif" alt="rotatingworld">
+            <p class="p3">this is my world now <br><br>it is so nice to have you here<br><br>it is so nice to have you here<br><br>it is so nice to have you here<br><br>it is so nice to have you here<br><br>it is so nice to have you here<br><br>it is so nice to have you here</p>
+        </div>
         <div>
-<img src="https://www.allconnect.com/wp-content/uploads/2024/04/GettyImages-1295689699.jpg" alt="websiteerrorimage"
-<p> this is not an actual error. it is not real. but this html page is.</p>
-</div>
+            <marquee behaviour="alternate" scrollamount="20">
+                 <img src="workbooks/img/vintagephone.png" width="400px" height="auto" alt="flipphone">
+            </marquee>
+            <marquee behaviour="alternate" scrollamount="40">
+                <img src="workbooks/img/dialphone.png" width="400px" height="auto" alt="flipphone">
+            </marquee>
+        </div>
     </section>
-    <header><h1>lessons in coding 101</h1></header>
-    <div class="wrapper"></div>
-    <div id="menu-col"></div>
-    <a href="workbooks/week1/index.html"><button>Week 1</a>
-    <div id="content">
-        <h2>week 1 content</h2>
-        <p> blah di blah blah </p>
-        <img src="./img/workbooks/img/pngtree-red-cloud-what-dialog-box-png-image_5572224.jpg">
-    </div>
-</div>
+    <section class="section2">
+        <header><h1 class="heading2">lessons in coding 101</h1></header>
+            <p class="p4">you must have patience <br> you must have time <br>you must have a good temper<br>you must have more time<br>maybe some snacks too</p>
+        <header><h1 class="heading3">week by week</h1></header>
+            <div class="Div2"> press any of the buttons below. literally any one. excercise your free will. </div>
+                <br>
+                 <a href="workbooks/week1/index.html" class="button button1">PRESS ME</a>
+                 <a href="workbooks/week2/index.html" class="button button2">OR PRESS ME</a>
+            <div id="content">
+            <p> blah di blah blah </p>
+            </div>
+    </section>
 </body>
 </html>
